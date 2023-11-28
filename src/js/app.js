@@ -21,7 +21,7 @@ const displayingText = (teg, text)  => {
 
 const mainMessage = () => {
   displayingText("h1", "Jogo do número secreto");
-  displayingText("p", "Escolha um numero entre 1 e 10 ");
+  displayingText("p", "Escolha um número entre 1 e 10 ");
 }
 
 mainMessage();
@@ -35,17 +35,17 @@ function vereficarChute( ){
 
   if (secretNumber === inputValueNumber ) {
     displayingText("h1",  "Parabens, Jogamos uma mais!");
-    displayingText("p", `Voçê descobriu o número secreto como ${counter} ${tentativeMessages()}`);
+    displayingText("p", `Você descobriu o número secreto como ${counter} ${tentativeMessages()}`);
     document.getElementById("reiniciar").removeAttribute("disabled");
 
   } else {
     if ( secretNumber > inputValueNumber) {
       
-      displayingText("p", `Número segreto é maior`);
+      displayingText("p", `Número secreto é maior`);
       
     } else if (secretNumber < inputValueNumber) {
 
-      displayingText("p", `Número segreto é menor`);
+      displayingText("p", `Número secreto é menor`);
     }
   }
 
