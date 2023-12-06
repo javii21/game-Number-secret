@@ -8,7 +8,7 @@
 // obtendo o valor do input de nosso HTML
 
 let drawnNumberList = [];
-let secretNumber = 2;
+let secretNumber = getRandomNumber();
 let counter = 1; 
 
 const displayingText = (teg, text)  => {
@@ -54,7 +54,7 @@ function vereficarChute( ){
 }
 
 function getRandomNumber() {
-  let chosenNumber = parseInt(Math.random() * 10) + 1;
+  let chosenNumber = parseInt(Math.random() * 100) + 1;
 
   if (drawnNumberList.includes(chosenNumber)) {
     return getRandomNumber();
